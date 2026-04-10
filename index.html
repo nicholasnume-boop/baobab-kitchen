@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Baobab Kitchen</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;max-width:700px;margin:2rem auto;padding:0 1rem}
+h1{color:#2e7d32}
+.menu{margin:1rem 0}
+.booking{border-top:1px solid #ddd;padding-top:1rem}
+label{display:block;margin:.5rem 0 .2rem}
+input,select{width:100%;padding:.5rem;margin-bottom:.6rem}
+button{padding:.6rem 1rem;background:#2e7d32;color:#fff;border:0;cursor:pointer}
+</style>
+</head>
+<body>
+<h1>Baobab Kitchen</h1>
+<p>Flavors of West & East Africa</p>
+
+<div class="menu">
+<h2>Menu</h2>
+<ul>
+<li>Jollof Rice – $12</li>
+<li>Nyama Choma (grilled beef) – $18</li>
+<li>Suya Skewers – $14</li>
+<li>Groundnut Stew (veg) – $13</li>
+<li>Mandazi (sweet dough) – $6</li>
+</ul>
+</div>
+
+<div class="booking">
+<h2>Book a table</h2>
+<form onsubmit="alert('Booking sent! Hook this to your backend.');return false;">
+<label>Name</label><input required>
+<label>Phone</label><input type="tel" required>
+<label>Date</label><input type="date" required>
+<label>Time</label><input type="time" required>
+<label>Guests</label><select><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select>
+<button>Reserve</button>
+</form>
+</div>
+</body>
+</html>
